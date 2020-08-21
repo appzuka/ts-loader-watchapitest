@@ -12,7 +12,7 @@
     "build": "time webpack",
     "buildtsc": "time tsc -b",
     "watch": "webpack-dev-server",
-    "install": "mkdir src/generated"
+    "install": "mkdir -p src/generated"
   },
   "dependencies": {
     "@types/node": "^14.6.0",
