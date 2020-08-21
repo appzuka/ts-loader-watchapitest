@@ -12,15 +12,15 @@ yarn install
 yarn generate
 ```
 
-generate creates source code in src/generate.  You can modify generate.ts to control the number of files, depth of nesting and the amount of code in each file.
+<code>generate</code> creates source code in src/generate.  You can modify generate.ts to control the number of files, depth of nesting and the amount of code in each file.
 
 Initially the settings for generate.ts are:
 ```
 const depths = [4,4,4,4,4];
-const busyWork = 2;
+const busyWork = 0;
 ```
 
-This means the generated code will have 5 levels of nesting with 4 files at each level.  Each file will contain the padding code twice to increase the work for the compiler.
+This means the generated code will have 5 levels of nesting with 4 files at each level.  busyWork can be changed to include extra padding code in each file to increase the work for the compiler.
 
 I can then run a build with
 ```
