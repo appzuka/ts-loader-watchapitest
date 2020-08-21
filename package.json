@@ -1,0 +1,27 @@
+{
+  "name": "ts-loader-watchapitest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/appzuka/ts-loader-watchapitest.git",
+  "author": "Nick Excell <nick@appzuka.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "generate": "ts-node generate.ts",
+    "clean": "rm src/generated/*",
+    "build": "time webpack",
+    "buildtsc": "time tsc -b",
+    "watch": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@types/node": "^14.6.0",
+    "fork-ts-checker-webpack-plugin": "^5.1.0",
+    "react": "^16.13.1",
+    "ts-loader": "^8.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
