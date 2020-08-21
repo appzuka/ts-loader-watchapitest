@@ -39,8 +39,8 @@ Currently transpileOnly and fork-ts-checker-webpack-plugin are the recommended s
 I believe the expermentalWatchApi is meant to reduce build time when projects are in watch mode, so perhaps it does not matter if the performance is not improved for production builds. To test performance in watch mode I set watch to true in webpack-config and timed the initial build and incremental build after changing 1 file:
 ```
                        Initial Build   Incremental Build
-normal:                   15.0s              6.0s
-experimentalWatchApi:     22.4s             <1.0s
+normal:                   15.0s             <1.0s
+experimentalWatchApi:     22.4s              6.0s
 ```
 
 I believe the incremental build time is very short because webpack in watch mode only builds files which need to be rebuilt.  This is the same reason the watchApi was created so I wonder if it is necessary to use it in a webpack loader if that function is already handled by webpack.
