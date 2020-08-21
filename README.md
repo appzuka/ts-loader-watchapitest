@@ -3,7 +3,7 @@ A repository to test performance with experimentalWatchApi.
 
 In order to test the performance a large codebase with many files is needed.  The generate.ts script populates src/generated with many files to give the compiler a workout.
 
-The code here will work in Windows Powershell but you will have to change the scripts in package.json to remove 'time' and '-p' from the install script.
+The code here was developed in WSL2. It will work in Windows Powershell but you will have to change the scripts in package.json to remove 'time' and '-p' from the install script.
 
 ## Installation
 
